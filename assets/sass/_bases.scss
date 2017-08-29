@@ -1,0 +1,290 @@
+body{
+	@include reinicia();
+	#home{
+		background:url("../../dist/img/ilya-pavlov-87438.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		padding-bottom:10%;
+		.navbar-fixed{
+			position:fixed top;
+
+		}
+		nav{
+
+			box-shadow:none;
+			-webkit-box-shadow:none;
+			background-color: transparent;
+			-webkit-background-size: cover; 
+			-moz-background-size: cover; 
+			-o-background-size: cover; 
+			background-size: cover;			
+			font-weight:bolder;
+			border-bottom:2px solid transparent;
+			-webkit-background-size: cover; 
+			-moz-background-size: cover; 
+			-o-background-size: cover; 
+			background-size: cover;			
+			.brand-logo{
+				img{
+					height:70px;
+					width:70px;	
+					margin-left:15%;				
+				}
+
+			}
+			ul{
+				li:hover{
+					background-color:whitesmoke;
+					color:transparent;
+				}
+			}
+		}
+		span{
+			color:black;
+		}
+		#motto{
+			margin-top:22%;
+			margin-bottom:23%;
+			color:whitesmoke;
+			font-weight:bolder;
+			.type{
+				color:white;
+			}
+			.typed-cursor{
+				color:white;
+			}
+		}	
+	}
+	#about{
+		color:#F5F5F5;
+		background: url("../../dist/img/joshua-davis-172644.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;		
+		.avatar{
+			img{
+				margin-top:-10%;
+				width:155px;
+				height:155px;
+				border:5px solid whitesmoke;
+			}
+		}
+		#first-line{
+			margin-top:5%;
+			font-size:35px;
+			font-weight:bold;
+			span{
+				color:$red-logo;
+				font-family: 'Exo 2', sans-serif;
+			}
+		}
+		#body{
+			font-size:20px;
+			color:whitesmoke;
+			font-weight:normal;
+			margin-bottom:10%;
+			margin-top:10%;
+			span{
+				font-weight:bold;
+				color:$red-logo;
+			}
+		}
+		#more{
+			margin-top:5%;
+			font-style:italic;
+		}
+		a{
+			color:white;
+			i{
+				font-size:20px;
+				font-weight:bolder;				
+			}
+
+		}
+		a:hover{
+			color:grey;
+		}
+		.row.last{
+			margin:0;
+		}
+	}
+	.separator{
+		margin:0;
+		border:1px solid whitesmoke;
+	}
+	#skills{
+		background-color:$fondo;
+		h4{
+			@include title();
+			font-size:300%;
+			color:$title-text;
+			margin-bottom:10%;
+			margin-top:10%;			
+		}
+		.bottom{
+			margin-top:5%;
+		}
+		.show-on-med-and-down{
+			padding-left:6%;
+		}
+		.ppal{
+			margin:0;
+			padding-bottom:10%;
+			i{
+				font-size:73px;
+			}
+			.materialize{
+				margin-top:-14%;
+				height:112px;
+				width:92px;
+			}
+			.bem{
+				height:80px;
+				width:70px;
+				margin-top:-5%;
+				margin-left:4%;
+			}			
+		}
+	}
+
+	#portfolio{
+		background: url("../../dist/img/dmitri-popov-192369.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		padding-bottom:10%;
+		h4{
+			@include title();
+			color:white;
+			font-size:430%;
+			margin-top:20%;
+			margin-bottom:5%;
+		}
+		.card{
+			margin:7% 5%;
+			h6 {
+				font-family: 'Exo 2', sans-serif;
+				font-weight:bold;
+			}
+
+
+			.card-image{
+				span{
+					color:grey;
+				}
+				img{
+					height:300px;			
+				}
+			}
+			.card-action{
+				a{
+					color:$red-logo;
+					font-weight:bold;
+				}
+				a:hover{
+					color:whitesmoke;
+				}
+
+			}
+		}
+		#lyft-i{
+			height:322px;
+		}
+	}
+
+	#contact{
+		background-color:#28383C;
+		h4{
+			@include title();
+			font-size:260%;
+			margin:5% 0 3% 0;
+			color:$footer;
+		}
+		#mail{
+			font-family: 'Exo 2', sans-serif;			
+			color:$footer;
+			background-color:transparent;
+			border-radius:5em;
+			padding:15px 45px;
+			height:500%;
+			font-size:20px;
+			font-weight:bolder;
+			margin-bottom:8%;
+			i{
+				font-weight:18px;
+				color:$red-logo;
+			}
+		}
+		#mail:hover{
+			@include hover();
+			color:$red-logo;
+			i{
+				color:whitesmoke;
+			}
+		}
+		.mail{
+			margin-bottom:0;
+			color:$red-logo;
+		}
+		.last-row{
+			margin-bottom:0;
+		}
+		.small-mail{
+			font-weight:bold;
+			color:whitesmoke;
+			font-size:15px;
+			i{
+				color:$red-logo;
+			}
+		}
+		#bottom-line{
+			margin-bottom:0;
+			padding-bottom:5%;
+			#gh-c{
+				background-color:transparent;
+				border-radius:100%;
+				i{
+					font-size:50px;
+					padding:5px;
+					color:$red-logo;
+				}
+			}
+			#gh-c:hover{
+				@include hover();
+			}
+			#slk-c{
+				background-color:transparent;
+				padding:3px 2px;
+				border-radius:100%;
+				i{
+					font-size:45px;
+					padding:5px;
+					color:$red-logo;
+				}				
+			}
+			#slk-c:hover{
+				@include hover();
+			}
+			#link-c{
+				background-color:transparent;
+				padding:5px 8px;
+				border-radius:100%;
+
+				i{
+
+					font-size:45px;
+					color:$red-logo;
+				}				
+			}
+			#link-c:hover{
+				@include hover();
+			}
+		}
+	}
+
+
+}

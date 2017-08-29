@@ -1,0 +1,21 @@
+@mixin reinicia(){
+	padding:0;
+	margin:0;
+    max-width: 100%;
+	overflow-x:hidden;
+}
+@mixin icon(){
+	margin-top:10%;
+	i{
+		font-size:70px;
+	}				
+}
+@mixin title(){
+	font-family: 'Exo 2', sans-serif;
+	font-weight:bolder;
+}
+@mixin hover(){
+	i{
+		color:whitesmoke;
+	}
+}
